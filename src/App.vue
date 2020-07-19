@@ -1,17 +1,17 @@
 <template>
   <div id="app" class="container mx-auto mt-10">
-    <HelloWorld msg="Welcome to Your Vue.js App" v-bind:seen="false"/>
+    <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
-import './assets/main.css'
+  import HelloWorld from './components/HelloWorld.vue';
+  import './assets/main.css'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  export default {
+    name: 'App',
+    components: {
+      HelloWorld
+    }
   }
-}
 </script>
