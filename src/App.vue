@@ -1,17 +1,30 @@
 <template>
   <div id="app" class="container mx-auto mt-10">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <HelloWorld msg="Hello" />
+    <ToDo :todos=todos />
   </div>
 </template>
 
 <script>
   import HelloWorld from './components/HelloWorld.vue';
-  import './assets/main.css'
+  import ToDo from './components/ToDo';
+  import './assets/main.css';
+  import './assets/custom.css';
 
   export default {
     name: 'App',
     components: {
-      HelloWorld
+      HelloWorld,
+      ToDo
+    },
+    data() {
+      return {
+        todos: [
+          { text: 'Learn JavaScript' },
+          { text: 'Learn Vue' },
+          { text: 'Build something awesome' }
+        ],
+      }
     }
   }
 </script>
