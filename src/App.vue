@@ -1,6 +1,7 @@
 <template>
   <div id="app" class="container mx-auto mt-10">
     <HelloWorld msg="Hello" />
+    <div class="mt-5" />
     <ToDo :todos=todos />
   </div>
 </template>
