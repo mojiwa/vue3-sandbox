@@ -26,6 +26,6 @@
           { text: 'Build something awesome' }
         ],
       }
-    }
+    },    
   }
 </script>

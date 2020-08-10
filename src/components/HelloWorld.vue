@@ -14,6 +14,8 @@
         Reverse Text
       </button>
     </div>
+    <div :class="{ 'hidden': isInvisible } ">You can't see me</div>
+    <div :style="styleObject">I am in the middle!</div>
   </div>
 </template>
 
@@ -29,6 +31,11 @@
     data() {
       return { 
         message: '',
+        isInvisible: true,
+        styleObject: {
+          position: 'relative',
+          left: '50%'
+        }
       }
     },
     methods: {
