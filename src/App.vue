@@ -1,33 +1,22 @@
 <template>
-  <div id="app" class="container mx-auto mt-10">
-    <!-- <HelloWorld msg="Hello" />
-    <div class="mt-5" />
-    <ToDo :todos=todos /> -->
-    <Calendar />
+  <AppHeader />
+  <div class="container mx-auto mt-10">
+    <router-view></router-view>    
   </div>
 </template>
 
-<script>
-  // import HelloWorld from './components/HelloWorld.vue';
-  // import ToDo from './components/ToDo';
-  import  Calendar from './components/Calendar';
+<script>    
   import './assets/main.css';
   import './assets/custom.css';
+  import AppHeader from './components/AppHeader'
 
   export default {
     name: 'App',
     components: {
-      // HelloWorld,
-      // ToDo,
-      Calendar
+      AppHeader,      
     },
     data() {
-      return {
-        // todos: [
-        //   { text: 'Learn JavaScript' },
-        //   { text: 'Learn Vue' },
-        //   { text: 'Build something awesome' }
-        // ],
+      return {        
       }
     },    
   }

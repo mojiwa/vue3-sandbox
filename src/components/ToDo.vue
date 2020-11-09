@@ -11,7 +11,7 @@
 <script>
 export default {
   name: 'ToDo',
-  props:['todos'],
+  props:['todoList'],
   computed: {
     numberOfItems() {
       return this.localTodos.length
@@ -19,7 +19,7 @@ export default {
   },
   data() {
     return {
-      localTodos: this.todos,
+      localTodos: this.todoList,
       tempItem: ''
     }
   },
