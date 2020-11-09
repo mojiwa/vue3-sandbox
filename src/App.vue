@@ -1,6 +1,6 @@
 <template>
   <AppHeader />
-  <div class="container mx-auto mt-10">
+  <div class='px-4 mx-auto mt-10'>
     <router-view></router-view>    
   </div>
 </template>
