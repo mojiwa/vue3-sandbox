@@ -4,6 +4,7 @@
     <span v-if="seen">Now you see me</span>
     <p>{{ message }}</p>
     <input placeholder="Enter some text here..." class="w-1/2 px-2 border-2 border-solid border-black shadow-lg outline-none" v-model="message" />
+    <!-- Or you can use :title instead of v-bind:title -->
     <div v-bind:title="message">
       Then hover your mouse over me for a few seconds...
     </div>
