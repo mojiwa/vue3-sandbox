@@ -726,6 +726,7 @@ module.exports = {
     transitionDuration: ['responsive'],
     transitionDelay: ['responsive'],
   },
-  corePlugins: {},
+  corePlugins: {    
+  },
   plugins: [],
 }

@@ -11,7 +11,13 @@
 <script>
 export default {
   name: 'ToDo',
-  props:['todoList'],
+  props: { 
+    todoList: 
+    { 
+      type: [Object], 
+      required: true 
+    }, 
+  },
   computed: {
     numberOfItems() {
       return this.localTodos.length
