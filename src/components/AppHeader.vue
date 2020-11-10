@@ -20,6 +20,7 @@ export default {
         { title: 'ToDo', to: '/todo' },
         { title: 'Calendar', to: '/calendar' },
         { title: 'Markdown', to: '/markdown' },
+        { title: 'Slider', to: '/slider' },
       ],      
     };
   },

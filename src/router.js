@@ -3,6 +3,7 @@ import ToDo from './components/ToDo';
 import Calendar from './components/Calendar';
 import Home from './components/Home';
 import Markdown from './components/Markdown';
+import Slider from './components/Slider';
 
 const todoList = [
     { text: 'Learn JavaScript' },
@@ -27,6 +28,10 @@ const routes = [
     {
         path: '/markdown',
         component: Markdown
+    },
+    {
+        path: '/slider',
+        component: Slider
     },
 ];
 
