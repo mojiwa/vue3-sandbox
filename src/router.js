@@ -4,6 +4,7 @@ import Calendar from './components/Calendar';
 import Home from './components/Home';
 import Markdown from './components/Markdown';
 import Slider from './components/Slider';
+import Calculator from './components/Calculator';
 
 const todoList = [
     { text: 'Learn JavaScript' },
@@ -32,6 +33,10 @@ const routes = [
     {
         path: '/slider',
         component: Slider
+    },
+    {
+        path: '/calculator',
+        component: Calculator
     },
 ];
 
